@@ -10,6 +10,52 @@ import { AboutUsComponentComponent } from './about-us-component/about-us-compone
 import { OurProductsComponentComponent } from './our-products-component/our-products-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { IndexComponentComponent } from './index-component/index-component.component';
+import { AboutComponentComponent } from './about-component/about-component.component';
+import { StoreComponentComponent } from './store-component/store-component.component';
+import { BlogComponentComponent } from './blog-component/blog-component.component';
+import { GalleryComponentComponent } from './gallery-component/gallery-component.component';
+import { ContactComponentComponent } from './contact-component/contact-component.component';
+
+import { RouterModule, Routes } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+
+const routes: Routes = [
+  {
+    path: 'index',
+    component: IndexComponentComponent
+  },
+  {
+    path: 'nosotros',
+    component: AboutComponentComponent
+  },
+  {
+    path: 'tienda',
+    component: StoreComponentComponent
+  },
+  {
+    path: 'blog',
+    component: BlogComponentComponent
+  },
+  {
+    path: 'galeria',
+    component: GalleryComponentComponent
+  },
+  {
+    path: 'contacto',
+    component: ContactComponentComponent
+  },
+  {
+    path:'',
+    redirectTo:'/index',
+    pathMatch: 'full'
+  },  
+  {
+    path: '**',
+    component: PageNotFoundComponent
+  },  
+
+];
 
 @NgModule({
   declarations: [
@@ -21,10 +67,17 @@ import { IndexComponentComponent } from './index-component/index-component.compo
     AboutUsComponentComponent,
     OurProductsComponentComponent,
     FooterComponentComponent,
-    IndexComponentComponent
+    IndexComponentComponent,
+    AboutComponentComponent,
+    StoreComponentComponent,
+    BlogComponentComponent,
+    GalleryComponentComponent,
+    ContactComponentComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
