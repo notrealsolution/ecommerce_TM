@@ -9,6 +9,7 @@ import { CategoriesComponentComponent } from './categories-component/categories-
 import { AboutUsComponentComponent } from './about-us-component/about-us-component.component';
 import { OurProductsComponentComponent } from './our-products-component/our-products-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
+import { IndexComponentComponent } from './index-component/index-component.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponentComponent } from './footer-component/footer-component.co
     CategoriesComponentComponent,
     AboutUsComponentComponent,
     OurProductsComponentComponent,
-    FooterComponentComponent
+    FooterComponentComponent,
+    IndexComponentComponent
   ],
   imports: [
     BrowserModule
