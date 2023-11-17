@@ -1,0 +1,8 @@
+/** Header y Navegacion **/
+.hero {
+    background-image: url(../../assets/img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+}

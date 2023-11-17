@@ -1,0 +1,9 @@
+/** Header y Navegacion **/
+.contenedor-navegacion {
+    border-top: .1rem solid #e1e1e1;
+}
+.nav-principal {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}

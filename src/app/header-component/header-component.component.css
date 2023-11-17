@@ -1,0 +1,8 @@
+/** Header y Navegacion **/
+.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+}
+.nombre-sitio span {
+    color: #037bc0;
+}
