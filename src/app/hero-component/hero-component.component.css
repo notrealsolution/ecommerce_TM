@@ -4,5 +4,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 55rem;
+    height: 25rem;
+}
+@media (min-width: 768px) {
+    .hero {
+        height: 55rem;
+    }
 }
