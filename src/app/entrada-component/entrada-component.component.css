@@ -1,0 +1,50 @@
+/* Estilos para dispositivos móviles */
+.entrada {
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+  }
+  .entrada h2 {
+    text-align: center;
+  }
+  .contenido-blog {
+    padding: 2rem;
+  }
+  .entrada:last-of-type {
+    border: none;
+  }
+
+  .entrada-meta p {
+    font-weight: bold;
+  }
+  .entrada-meta span {
+    color: #037bc0;
+  }
+.contenido-meta {
+  padding: 2rem; /* Ajusta el espacio interno en dispositivos móviles */
+}
+
+.contenido-entrada-blog img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra la imagen */
+}
+
+.contenido-entrada-blog p {
+  max-width: 100%;
+  word-wrap: break-word; /* Rompe las palabras largas si exceden el ancho */
+  overflow-wrap: break-word; /* Para navegadores que usen 'overflow-wrap' en lugar de 'word-wrap' */
+}
+
+@media (min-width: 768px) {
+
+  .contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
+  }
+  .entrada-meta {
+    display: flex;
+    justify-content: space-between;
+  }
+}

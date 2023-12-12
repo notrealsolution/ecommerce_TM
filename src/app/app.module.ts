@@ -18,6 +18,7 @@ import { ContactComponentComponent } from './contact-component/contact-component
 
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { EntradaComponentComponent } from './entrada-component/entrada-component.component';
 
 
 const routes: Routes = [
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponentComponent
+  },
+  {
+    path: 'entrada',
+    component: EntradaComponentComponent
   },
   {
     path: 'galeria',
@@ -73,7 +78,8 @@ const routes: Routes = [
     BlogComponentComponent,
     GalleryComponentComponent,
     ContactComponentComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    EntradaComponentComponent
   ],
   imports: [
     BrowserModule,
